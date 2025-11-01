@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Parallax AI ? Build, deploy, and scale AI experiences with enterprise-grade speed and reliability." />
+  <title>Parallax AI ? Build AI experiences that convert</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="/styles.css" as="style" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="preload" href="/script.js" as="script" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#" class="brand" aria-label="Parallax AI home">
+        <span class="logo" aria-hidden="true">?</span>
+        <span class="brand-text">Parallax <strong>AI</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-menu" id="navMenu" role="navigation">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how">How it works</a>
+        <a href="#models">Models</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta" class="btn btn-primary">Get started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section id="hero" class="section hero">
+      <div class="container grid-2 hero-grid">
+        <div class="stack gap-4 hero-copy">
+          <div class="eyebrow">Ship faster with confidence</div>
+          <h1 class="display">Build AI experiences that convert</h1>
+          <p class="subhead">Design, evaluate, and deploy AI features with production guardrails, observability, and a library of state?of?the?art models.
+          </p>
+          <div class="row gap-2">
+            <a href="#pricing" class="btn btn-primary">Start free</a>
+            <a href="#how" class="btn btn-ghost">See how it works</a>
+          </div>
+          <div class="row gap-3 hero-metrics" aria-label="Key metrics">
+            <div class="metric glass">
+              <div class="num">3.2x</div>
+              <div class="label">Faster release cycles</div>
+            </div>
+            <div class="metric glass">
+              <div class="num">99.95%</div>
+              <div class="label">Serving uptime</div>
+            </div>
+            <div class="metric glass">
+              <div class="num">-42%</div>
+              <div class="label">Latency reduction</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="parallax-layer l1" aria-hidden="true"></div>
+          <div class="parallax-layer l2" aria-hidden="true"></div>
+          <div class="parallax-layer l3" aria-hidden="true"></div>
+          <div class="demo glass">
+            <div class="demo-header">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <div class="demo-title">/api/generate</div>
+            </div>
+            <pre class="demo-code" aria-label="Code snippet"><code>{
+  "model": "parallax-ultra-70b",
+  "input": "Summarize customer feedback into 3 bullet points",
+  "temperature": 0.2,
+  "guardrails": ["pii", "toxicity"]
+}</code></pre>
+            <div class="demo-stream" aria-hidden="true">
+              <span class="chip">? PII redaction</span>
+              <span class="chip">? Hallucination check</span>
+              <span class="chip">? Prompt cache</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section id="problem" class="section">
+      <div class="container grid-2 align-center">
+        <div class="stack gap-3">
+          <h2 class="h2">AI projects stall after the demo</h2>
+          <p>Teams struggle to move from prototype to production?costs spike, quality drifts, and monitoring is an afterthought. You need reliability without slowing down iteration.</p>
+          <ul class="checklist">
+            <li><span>Quality varies across prompts and users</span></li>
+            <li><span>Latency and cost blow up at scale</span></li>
+            <li><span>No visibility into failures or regressions</span></li>
+          </ul>
+        </div>
+        <div class="problem-cards">
+          <div class="card glass reveal">
+            <h3 class="h4">Guardrails</h3>
+            <p>Safety, compliance, and approval workflows built-in.</p>
+          </div>
+          <div class="card glass reveal">
+            <h3 class="h4">Observability</h3>
+            <p>Full traces, evals, and auto?tuning powered by feedback.</p>
+          </div>
+          <div class="card glass reveal">
+            <h3 class="h4">Cost control</h3>
+            <p>Smart routing, caching, and batch inference reduce spend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section id="solution" class="section alt">
+      <div class="container">
+        <h2 class="h2 center">One platform from idea to impact</h2>
+        <div class="features grid-3">
+          <article class="feature glass reveal">
+            <div class="icon" aria-hidden="true">?</div>
+            <h3 class="h4">Compose</h3>
+            <p>Sandbox prompts, tools, and data to iterate quickly with versioning.</p>
+          </article>
+          <article class="feature glass reveal">
+            <div class="icon" aria-hidden="true">???</div>
+            <h3 class="h4">Harden</h3>
+            <p>Add guardrails, evaluations, and drift detection before launch.</p>
+          </article>
+          <article class="feature glass reveal">
+            <div class="icon" aria-hidden="true">??</div>
+            <h3 class="h4">Scale</h3>
+            <p>Deploy globally with autoscaling, smart routing, and insights.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="section">
+      <div class="container">
+        <h2 class="h2 center">How it works</h2>
+        <ol class="how-steps">
+          <li class="how-step reveal">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3 class="h4">Design</h3>
+              <p>Create prompt chains and tool integrations with version control.</p>
+            </div>
+          </li>
+          <li class="how-step reveal">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3 class="h4">Evaluate</h3>
+              <p>Run offline and live evals with golden datasets and user feedback.</p>
+            </div>
+          </li>
+          <li class="how-step reveal">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3 class="h4">Deploy</h3>
+              <p>Ship to production with guardrails, caching, and observability.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Models Showcase (Carousel) -->
+    <section id="models" class="section alt">
+      <div class="container">
+        <div class="row space-between align-center">
+          <h2 class="h2">Models that meet your needs</h2>
+          <div class="carousel-controls" aria-label="Carousel controls">
+            <button class="carousel-btn" data-action="prev" aria-label="Previous">?</button>
+            <button class="carousel-btn" data-action="next" aria-label="Next">?</button>
+          </div>
+        </div>
+        <div class="carousel" aria-roledescription="carousel" aria-label="Models">
+          <div class="carousel-track" id="modelsTrack">
+            <div class="model-card glass">
+              <h3 class="h4">Parallax Ultra 70B</h3>
+              <p>State?of?the?art general reasoning with low latency routing.</p>
+              <ul class="tags"><li>Reasoning</li><li>Low latency</li><li>32k ctx</li></ul>
+            </div>
+            <div class="model-card glass">
+              <h3 class="h4">Parallax Vision 12B</h3>
+              <p>Multimodal understanding for UIs, receipts, and screenshots.</p>
+              <ul class="tags"><li>Vision</li><li>OCR+</li><li>Multimodal</li></ul>
+            </div>
+            <div class="model-card glass">
+              <h3 class="h4">Parallax Code 20B</h3>
+              <p>High?accuracy code generation and refactoring with test?aware decoding.</p>
+              <ul class="tags"><li>Code</li><li>Tests</li><li>Secure</li></ul>
+            </div>
+            <div class="model-card glass">
+              <h3 class="h4">Parallax Small 3B</h3>
+              <p>Cost?effective for simple tasks and on?device inference.</p>
+              <ul class="tags"><li>Edge</li><li>Cheap</li><li>Fast</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases (Tabs) -->
+    <section id="use-cases" class="section">
+      <div class="container">
+        <h2 class="h2 center">Built for your workflow</h2>
+        <div class="tabs" role="tablist" aria-label="Use cases">
+          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="uc-1" id="tab-1">Support</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="uc-2" id="tab-2">Productivity</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="uc-3" id="tab-3">E?commerce</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="uc-4" id="tab-4">Security</button>
+        </div>
+        <div class="tabpanels">
+          <div class="tabpanel is-active" id="uc-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="grid-3">
+              <div class="use-card glass">
+                <h3 class="h5">Auto?reply drafting</h3>
+                <p>Reduce handle time with accurate, brand?safe drafts.</p>
+              </div>
+              <div class="use-card glass">
+                <h3 class="h5">Intent routing</h3>
+                <p>Direct users to the right flow with high precision.</p>
+              </div>
+              <div class="use-card glass">
+                <h3 class="h5">Knowledge search</h3>
+                <p>Grounded answers with citations to your docs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tabpanel" id="uc-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+            <div class="grid-3">
+              <div class="use-card glass"><h3 class="h5">Meeting notes</h3><p>Summaries, action items, and follow?ups.</p></div>
+              <div class="use-card glass"><h3 class="h5">Document Q&A</h3><p>Ask anything about PDFs and slides.</p></div>
+              <div class="use-card glass"><h3 class="h5">Email triage</h3><p>Prioritize and draft in your tone.</p></div>
+            </div>
+          </div>
+          <div class="tabpanel" id="uc-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+            <div class="grid-3">
+              <div class="use-card glass"><h3 class="h5">Product copy</h3><p>Generate SEO?friendly descriptions.</p></div>
+              <div class="use-card glass"><h3 class="h5">Personalization</h3><p>Segment?aware recommendations per user.</p></div>
+              <div class="use-card glass"><h3 class="h5">Review insights</h3><p>Mine feedback to guide roadmap.</p></div>
+            </div>
+          </div>
+          <div class="tabpanel" id="uc-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+            <div class="grid-3">
+              <div class="use-card glass"><h3 class="h5">PII redaction</h3><p>Real?time detection and masking.</p></div>
+              <div class="use-card glass"><h3 class="h5">Abuse filtering</h3><p>Proactive toxicity and jailbreak checks.</p></div>
+              <div class="use-card glass"><h3 class="h5">Policy auditing</h3><p>Evidence?backed compliance reports.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Deep Dive (Accordions) -->
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2 class="h2 center">Deep dive on features</h2>
+        <div class="accordion" role="region" aria-label="Feature details">
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="f1" id="f1-label">Guardrails & Safety</button>
+            <div id="f1" class="accordion-panel" role="region" aria-labelledby="f1-label" hidden>
+              <p>Out?of?the?box filters for PII, toxicity, jailbreaks, and prompt injection. Custom policies with audit logs.</p>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="f2" id="f2-label">Observability & Evals</button>
+            <div id="f2" class="accordion-panel" role="region" aria-labelledby="f2-label" hidden>
+              <p>Traces, spans, and regression dashboards with golden datasets and human?in?the?loop review.</p>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="f3" id="f3-label">Smart Routing & Caching</button>
+            <div id="f3" class="accordion-panel" role="region" aria-labelledby="f3-label" hidden>
+              <p>Dynamic provider selection, token budgeting, and prompt cache with hit?rate analytics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="row space-between align-center">
+          <h2 class="h2">Simple, scalable pricing</h2>
+          <div class="billing-toggle" role="group" aria-label="Billing">
+            <button class="toggle-btn is-active" data-bill="monthly" aria-pressed="true">Monthly</button>
+            <button class="toggle-btn" data-bill="yearly" aria-pressed="false">Yearly <span class="save">Save 15%</span></button>
+          </div>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card glass">
+            <h3 class="h4">Starter</h3>
+            <p class="price" data-monthly="$0" data-yearly="$0">$0</p>
+            <ul class="features">
+              <li>10k requests / mo</li>
+              <li>Community support</li>
+              <li>Shared models</li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Try free</a>
+          </div>
+          <div class="price-card glass highlight">
+            <div class="badge">Most Popular</div>
+            <h3 class="h4">Growth</h3>
+            <p class="price" data-monthly="$199" data-yearly="$169">$199</p>
+            <ul class="features">
+              <li>1M requests / mo</li>
+              <li>Custom guardrails</li>
+              <li>Observability</li>
+            </ul>
+            <a class="btn btn-primary" href="#cta">Get started</a>
+          </div>
+          <div class="price-card glass">
+            <h3 class="h4">Enterprise</h3>
+            <p class="price" data-monthly="Contact" data-yearly="Contact">Contact</p>
+            <ul class="features">
+              <li>SLA & SSO</li>
+              <li>Private models</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a class="btn btn-ghost" href="#cta">Contact sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="social" class="section alt">
+      <div class="container">
+        <h2 class="h2 center">Trusted by product teams</h2>
+        <div class="logo-row" aria-label="Customer logos">
+          <span class="logo-badge">A</span>
+          <span class="logo-badge">B</span>
+          <span class="logo-badge">C</span>
+          <span class="logo-badge">D</span>
+          <span class="logo-badge">E</span>
+        </div>
+        <div class="testimonials carousel" aria-roledescription="carousel" aria-label="Testimonials">
+          <div class="carousel-track" id="testimonialsTrack">
+            <figure class="testimonial glass">
+              <blockquote>?Parallax cut our time?to?launch from months to weeks.?</blockquote>
+              <figcaption>VP Engineering, Series B SaaS</figcaption>
+            </figure>
+            <figure class="testimonial glass">
+              <blockquote>?The evals and guardrails gave us confidence to scale.?</blockquote>
+              <figcaption>Head of Product, Fintech</figcaption>
+            </figure>
+            <figure class="testimonial glass">
+              <blockquote>?Best developer experience we?ve had with AI tools.?</blockquote>
+              <figcaption>CTO, E?commerce</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" data-action="prev" aria-label="Previous testimonial">?</button>
+            <button class="carousel-btn" data-action="next" aria-label="Next testimonial">?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="h2 center">Frequently asked questions</h2>
+        <div class="accordion" role="region" aria-label="FAQ">
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="q1" id="q1-label">How do you handle data privacy?</button>
+            <div id="q1" class="accordion-panel" role="region" aria-labelledby="q1-label" hidden>
+              <p>We never train on your data without consent. Enterprise plans support private deployments and data residency.</p>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="q2" id="q2-label">What?s included in evaluations?</button>
+            <div id="q2" class="accordion-panel" role="region" aria-labelledby="q2-label" hidden>
+              <p>Golden datasets, human review tools, automatic metrics, and regression alerts across releases.</p>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="q3" id="q3-label">Can I bring my own model?</button>
+            <div id="q3" class="accordion-panel" role="region" aria-labelledby="q3-label" hidden>
+              <p>Yes?connect popular providers or deploy your private models behind our APIs and controls.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="section cta">
+      <div class="container cta-card glass">
+        <div class="stack gap-3">
+          <h2 class="h2">Launch your next AI feature</h2>
+          <p>Start free. Add your team later. No credit card required.</p>
+        </div>
+        <form class="cta-form" action="#" method="post" onsubmit="return false" aria-label="Email signup">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required aria-required="true" />
+          <button class="btn btn-primary" id="ctaSubmit">Get started</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="stack gap-2">
+          <a href="#" class="brand small"><span class="logo">?</span> Parallax <strong>AI</strong></a>
+          <p class="muted">? <span id="year"></span> Parallax AI, Inc. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <div class="col">
+            <h4 class="h6">Product</h4>
+            <a href="#how">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div class="col">
+            <h4 class="h6">Company</h4>
+            <a href="#social">Customers</a>
+            <a href="#faq">FAQ</a>
+            <a href="#cta">Contact</a>
+          </div>
+          <div class="col">
+            <h4 class="h6">Legal</h4>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script defer src="/script.js"></script>
+</body>
+</html>
